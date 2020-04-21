@@ -53,24 +53,30 @@ function App() {
 
   return (
     <div className="App">
-      <header>
-        <h1>Team Members</h1>
-      </header>
-      <div>
-      {
-        members.map(member => {
-          return (
-            <Member key={member.id} details={member} />
-          )
-        })
-      }
-      </div>
+      <div className="bob">
+        <header>
+          <h1>Team Members</h1>
+        </header>
+        <div className="steve">
+        <div>
+        {
+          members.map(member => {
+            return (
+              <Member key={member.id} details={member} />
+            )
+          })
+        }
+        </div>
+        </div>
+     
 
       <MemberForm
         values={formValues}
         onInputChange={onInputChange}
         onSubmit={onSubmit}
       />
+      </div>
+      
     </div>
   );
 }
