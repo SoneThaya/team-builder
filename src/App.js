@@ -56,7 +56,7 @@ function App() {
       <header>
         <h1>Team Members</h1>
       </header>
-
+      <div>
       {
         members.map(member => {
           return (
@@ -64,6 +64,7 @@ function App() {
           )
         })
       }
+      </div>
 
       <MemberForm
         values={formValues}

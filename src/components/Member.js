@@ -6,11 +6,14 @@ function Member({ details }) {
   }
 
   return (
-    <div className='member container'>
-      <h2>{details.firstName}</h2>
-      <h2>{details.lastName}</h2>
+    <div class="card">
+    <div className='container'>
+      <h2>{details.firstName} {details.lastName}</h2>
       <h2>{details.email}</h2>
 
+    </div>
+   
+      
     </div>
   )
 }

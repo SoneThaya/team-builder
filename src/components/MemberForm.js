@@ -8,10 +8,10 @@ function MemberForm(props) {
   } = props
 
   return (
-    <form className='member container'>
+    <form className='member-container'>
       <h2>Member Form</h2>
 
-      <label>First Name: 
+      <label className='txtb'>First Name: 
        <input
           value={values.firstName}
           onChange={onInputChange}
@@ -19,7 +19,7 @@ function MemberForm(props) {
           type="text" />
       </label>
 
-      <label>Last Name: 
+      <label className='txtb'>Last Name: 
        <input
           value={values.lastName}
           onChange={onInputChange}
@@ -27,7 +27,7 @@ function MemberForm(props) {
           type="text" />
       </label>
 
-      <label>Email: 
+      <label className='txtb'>Email: 
        <input
           value={values.email}
           onChange={onInputChange}
@@ -35,7 +35,7 @@ function MemberForm(props) {
           type="text" />
       </label>
 
-      <button onClick={onSubmit}>submit</button>
+      <button className='logbtn' onClick={onSubmit}>submit</button>
     
     </form>
   )
